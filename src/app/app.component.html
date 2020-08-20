@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <!-- <div class="container"> -->
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <input type="text" class="form-control" placeholder="Enter room name to make it personal">
+                    </div>
+                    <div class="textarea">
+                        <textarea rows="20" cols="81" placeholder="Your text goes here"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="data">Refresh</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+
+                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                            <input type="file" (input)="onClickPreview($event)" multiple="multiple" class="btn btn-primary" id="upload">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <input type="button" value="Preview" (click)="onPreviewButton()" id="preview" class="btn">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="Filesdiv">
+                                <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+
+                                <div *ngFor="let file of files">
+                                    <img [src]="file" *ngIf="isimg" style="margin:20px; width:564px">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>

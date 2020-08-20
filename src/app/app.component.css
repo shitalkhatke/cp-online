@@ -1,0 +1,46 @@
+.card {
+    margin: 2ex;
+}
+
+.card-body {
+    min-height: 90vh;
+}
+
+.textarea {
+    margin-top: 2ex;
+}
+
+#Filesdiv {
+    max-height: 575px;
+    overflow-y: scroll;
+}
+
+.img {
+    margin: 20px;
+}
+
+#data.btn-primary {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: #FFF;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(58, 133, 191, 0.75);
+    border-radius: 40px;
+    background: #0066FF;
+    transition: all 0.3s ease 0s;
+}
+
+#data.btn-primary:hover {
+    color: #FFF;
+    background: #0000FF;
+    border: 2px solid rgba(58, 133, 191, 0.75);
+}
+
+#preview {
+    border: 2px solid rgba(58, 133, 191, 0.75);
+}
+
+#upload {
+    border: 2px solid rgba(58, 133, 191, 0.75);
+}
